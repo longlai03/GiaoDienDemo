@@ -9,7 +9,6 @@
     display: flex;
     flex-wrap: wrap;
     max-width: 1280px;
-    margin: 0 auto;
 }
 .content{
     color: white;
@@ -23,17 +22,16 @@ a{
 
 
 
-
+.left_body{
+    flex: 0 0 30%;
+    padding-left: 15px;
+}
 body {
     margin: 0; 
     padding: 0; 
     align-items: left;
 }
 
-.left_body {
-
-    padding: 5px; 
-}
 h3{
     color: white;
 }
@@ -44,7 +42,7 @@ h3{
     margin-right: 5px;
 }
 .menu_option a {
-    margin: 0;
+    margin-right: 10px;
 
 }
 
@@ -101,17 +99,17 @@ h3{
 .center_body {
     display: flex;
     justify-content: flex-start;
-    padding: 20px;
+    flex: 0 0 30%;
+    padding-left: 40px;
 }
 
 .center_information {
     max-width: 600px;
-    width: 100%;
+    width: 80%;
 }
 
 .information_content {
-    padding: 20px;
-    border-radius: 8px;
+    border-radius: 0;
 }
 
 .information_item1 {
@@ -138,4 +136,45 @@ h3{
 .text_information {
     color: #fff;
     margin: 0;
+}
+
+
+/* right_body */
+.content_tag a {
+    display: inline-block;
+    padding: 5px 10px ; 
+    margin-bottom: 5px;
+    border-radius: 20px; 
+    text-decoration: none; 
+    color: #fff; 
+    background-color: #007BFF; 
+    transition: background-color 0.3s ease; 
+    box-sizing: border-box; 
+}
+
+
+.content_tag a:hover {
+    background-color: #0056b3; 
+}
+.right_body{
+    flex: 0 0 32%;
+}
+
+
+/* final */
+.final_footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    color: white;
+    padding: 20px;
+    position: relative;
+}
+.left_final {
+    flex: 1;
+}
+.right_final {
+    flex: 1;
+    text-align: right;
+    position: relative; 
 }
