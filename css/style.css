@@ -118,6 +118,11 @@ header .account .button {
     border: none;
     display: inline-block;
 }
+
+
+/* header section end */
+
+/* search section start */
 .properties-search{
     background-image: url(https://sample.realhomes.io/modern02/wp-content/uploads/sites/2/2020/06/Bedroom.jpg);
     background-position: center 0%;
@@ -126,9 +131,8 @@ header .account .button {
     position: relative;
     display: flex;
     align-items: flex-end;
-    /* justify-content: center; */
     z-index: 500;
-    height: 30rem;
+    height: 20rem;
     width: 100%;
 }
 section .properties-cover{
@@ -145,22 +149,87 @@ section .properties-cover{
 section .properties-search-header{
     display: flex;
     align-items: center;
-    /* flex-direction: row; */
+    width: 100%;
+    justify-content: space-between;
     color: #ffffff;
     z-index: 500;
+    margin: 0 8%;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+}
+
+section .properties-search-header h1{
+    font-size: 36px;
 }
 section .properties-search-control{
     display: flex;
     align-items: center;
-    justify-content: space-between;
 }
 
 section .properties-search-control a{
+    margin: 0 0 0 1.5rem;
     color: #ffffff;
 }
 
-/* header section end */
 
+.properties-search-form-container{
+    color: #808080;
+    position: relative;
+    padding: 0;
+    padding-bottom: 4.75rem;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.properties-search-form{
+    position: absolute;
+    display: flex;
+    flex-wrap: nowrap;
+    left: 0;
+    right: 0;
+    /* bottom: 4.75rem; */
+    margin-top: -4.75rem;
+    z-index: 501;
+    padding: 0 20px;
+    margin-left: 8%;
+    margin-right: 8%;
+}
+
+.search-field-section{
+    background: #fff;
+    border-radius: 5px 0 0 5px;
+    width: 80%;
+    flex: 0 1 auto;
+}
+
+.search-field-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    z-index: 999;
+}
+
+
+.search-button-section{
+    display: flex;
+    border-radius: 5px 0 0 5px;
+    width: 20%;
+    flex: 1;
+    align-items: flex-start;
+    position: relative;
+    justify-content: center;
+}
+
+
+/* search section end */
+.map-container{
+    position: relative;
+    top: -4.75rem;
+    left: 0;
+    right: 0;
+    width: 100%;
+}
 /* footer section start */
 .footer {
     background-color: #0054a5;
