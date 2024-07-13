@@ -321,6 +321,10 @@ section .properties-search-control a {
     margin-left: 18px;
 }
 
+.agent-widget-content{
+    font-size: 14px;
+}
+
 .agent-thumbnail>a>img {
     border-radius: 100%;
 }
@@ -341,16 +345,14 @@ section .properties-search-control a {
     font-weight: 500;
 }
 
-.agent-widget-content a{
-    text-decoration: none;
-    color: #444444;
-}
-
 .property-type-widget{
     width: 100%;
     padding: 0;
     margin: 0 auto;
     margin-bottom: 10px;
+}
+
+.property-type-widget a{
     font-size: 13px;
 }
 
