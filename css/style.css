@@ -220,8 +220,6 @@ section .properties-search-control a{
     display: block;
 }
 
-.search-button-section
-
 .search-button-section{
     display: flex;
     border-radius: 5px 0 0 5px;
