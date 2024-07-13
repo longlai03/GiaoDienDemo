@@ -10,6 +10,12 @@ body {
     min-height: 100%;
 }
 
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
 /* header section start */
 header {
     position: absolute;
@@ -123,7 +129,7 @@ header .account .button {
 /* header section end */
 
 /* search section start */
-.properties-search{
+.properties-search {
     background-image: url(https://sample.realhomes.io/modern02/wp-content/uploads/sites/2/2020/06/Bedroom.jpg);
     background-position: center 0%;
     background-size: cover;
@@ -135,7 +141,8 @@ header .account .button {
     height: 20rem;
     width: 100%;
 }
-section .properties-cover{
+
+section .properties-cover {
     display: block;
     position: absolute;
     width: 100%;
@@ -146,7 +153,7 @@ section .properties-cover{
     z-index: 0;
 }
 
-section .properties-search-header{
+section .properties-search-header {
     display: flex;
     align-items: center;
     width: 100%;
@@ -159,21 +166,22 @@ section .properties-search-header{
     padding-bottom: 80px;
 }
 
-section .properties-search-header h1{
+section .properties-search-header h1 {
     font-size: 36px;
 }
-section .properties-search-control{
+
+section .properties-search-control {
     display: flex;
     align-items: center;
 }
 
-section .properties-search-control a{
+section .properties-search-control a {
     margin: 0 0 0 1.5rem;
     color: #ffffff;
 }
 
 
-.properties-search-form-container{
+.properties-search-form-container {
     color: #808080;
     position: relative;
     padding: 0;
@@ -182,7 +190,7 @@ section .properties-search-control a{
     width: 100%;
 }
 
-.properties-search-form{
+.properties-search-form {
     position: absolute;
     display: flex;
     flex-wrap: nowrap;
@@ -197,14 +205,14 @@ section .properties-search-control a{
     height: 7.5rem;
 }
 
-.search-field-section{
+.search-field-section {
     background: #fff;
     border-radius: 5px 0 0 5px;
     width: 80%;
     flex: 0 1 auto;
 }
 
-.search-field-container{
+.search-field-container {
     position: relative;
     display: flex;
     flex-wrap: wrap;
@@ -212,15 +220,17 @@ section .properties-search-control a{
     align-items: center;
     height: 100%;
 }
-.search-field-container>div{
+
+.search-field-container>div {
     flex: 1;
     padding: 20px;
 }
-.search-location{
+
+.search-location {
     display: block;
 }
 
-.search-button-section{
+.search-button-section {
     display: flex;
     border-radius: 5px 0 0 5px;
     width: 20%;
@@ -234,14 +244,95 @@ section .properties-search-control a{
 /* search section end */
 
 /* map section start */
-.map-container{
+.map-container {
     position: relative;
     top: -4.75rem;
     left: 0;
     right: 0;
     width: 100%;
 }
+
 /* map section end */
+
+/* main section start */
+.main {
+    max-width: 100%;
+    display: flex;
+    padding: 0 20px;
+    margin: 0 8%;
+    box-sizing: border-box;
+}
+
+.main a:hover{
+    transition: 0.2s color linear;
+    color: #1cb2ff;
+}
+
+.main h3, .main h4{
+    color: #1a1a1a;
+}
+
+.page-list-container {
+    width: 70%;
+}
+
+.side-bar-container {
+    width: 30%;
+    padding-bottom: 30px;
+}
+
+.agent-list-widget {
+    display: flex;
+    flex-direction: column;
+}
+.agent-list-widget .agent-thumbnail{
+    width: 90px;
+    height: 90px;
+    margin: 0;
+    position: relative;
+}
+
+.agent-list-widget .agent-list-item {
+    display: flex;
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 0 1px 1px rgba(128, 128, 128, .2);
+}
+
+.agent-list-widget .agent-widget-content {
+    float: left;
+    margin-left: 18px;
+}
+
+.agent-thumbnail>a>img {
+    border-radius: 100%;
+}
+
+.agent-thumbnail .verification-icon{
+    color: #1cb2ff;
+    position: absolute;
+    top: auto;
+    left: auto;
+    bottom: 0;
+    right: 0;
+    z-index: 999;
+}
+
+.agent-widget-content h4{
+    margin-top: 14px;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+.agent-widget-content a{
+    text-decoration: none;
+    color: #444444;
+}
+
+
+
+/* main section end */
 
 /* footer section start */
 .footer {
@@ -271,17 +362,12 @@ section .properties-search-control a{
 
 
 
-.left_body{
+.left_body {
     flex: 0 0 30%;
     padding-left: 15px;
 }
-body {
-    margin: 0; 
-    padding: 0; 
-    align-items: left;
-}
 
-h3{
+footer h3 {
     color: white;
 }
 
@@ -388,27 +474,29 @@ h3{
     color: #fff;
     margin: 0;
 }
+
 /* footer section end */
 
 
 /* right_body */
 .content_tag a {
     display: inline-block;
-    padding: 5px 10px ; 
+    padding: 5px 10px;
     margin-bottom: 5px;
-    border-radius: 20px; 
-    text-decoration: none; 
-    color: #fff; 
-    background-color: #007BFF; 
-    transition: background-color 0.3s ease; 
-    box-sizing: border-box; 
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #007BFF;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box;
 }
 
 
 .content_tag a:hover {
-    background-color: #0056b3; 
+    background-color: #0056b3;
 }
-.right_body{
+
+.right_body {
     flex: 0 0 32%;
 }
 
@@ -422,11 +510,13 @@ h3{
     padding: 20px;
     position: relative;
 }
+
 .left_final {
     flex: 1;
 }
+
 .right_final {
     flex: 1;
     text-align: right;
-    position: relative; 
+    position: relative;
 }
