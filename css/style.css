@@ -177,7 +177,7 @@ section .properties-search-control a{
     color: #808080;
     position: relative;
     padding: 0;
-    padding-bottom: 4.75rem;
+    padding-bottom: 3.75rem;
     margin: 0 auto;
     width: 100%;
 }
@@ -189,11 +189,12 @@ section .properties-search-control a{
     left: 0;
     right: 0;
     /* bottom: 4.75rem; */
-    margin-top: -4.75rem;
+    margin-top: -3.75rem;
     z-index: 501;
     padding: 0 20px;
     margin-left: 8%;
     margin-right: 8%;
+    height: 7.5rem;
 }
 
 .search-field-section{
@@ -208,8 +209,18 @@ section .properties-search-control a{
     display: flex;
     flex-wrap: wrap;
     z-index: 999;
+    align-items: center;
+    height: 100%;
+}
+.search-field-container>div{
+    flex: 1;
+    padding: 20px;
+}
+.search-location{
+    display: block;
 }
 
+.search-button-section
 
 .search-button-section{
     display: flex;
@@ -223,6 +234,8 @@ section .properties-search-control a{
 
 
 /* search section end */
+
+/* map section start */
 .map-container{
     position: relative;
     top: -4.75rem;
@@ -230,6 +243,8 @@ section .properties-search-control a{
     right: 0;
     width: 100%;
 }
+/* map section end */
+
 /* footer section start */
 .footer {
     background-color: #0054a5;
