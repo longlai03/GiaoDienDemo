@@ -252,8 +252,6 @@ section .properties-search-control a {
     position: relative;
     justify-content: center;
 }
-
-
 /* search section end */
 
 /* map section start */
@@ -285,9 +283,7 @@ section .properties-search-control a {
     transition: 0.2s color linear;
     color: #1cb2ff;
 }
-
-.main h3,
-.main h4 {
+.main h3, .main h4{
     color: #1a1a1a;
 }
 
@@ -545,9 +541,6 @@ section .properties-search-control a {
     display: flex;
     align-items: center;
 }
-
-
-
 .left_body {
     flex: 0 0 30%;
     padding-left: 15px;
@@ -561,64 +554,23 @@ footer h3 {
     padding: 5px;
 }
 
-.item1_menu,
-.item2_menu,
-.item3_menu,
-.item4_menu,
-.item5_menu,
-.item6_menu {
+.item1_menu,.item2_menu,.item3_menu,.item4_menu,.item5_menu,.item6_menu {
     margin-right: 5px;
 }
-
 .menu_option a {
     margin-right: 10px;
 
 }
-
 #menu {
     padding: 5px;
 }
-
 .menu_option {
     padding: 0;
-}
-
-
-#menu_content {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-
-}
-
-#menu_content li {
-    width: 45%;
-    margin: 0;
-    color: white;
-}
-
-
-#menu_content li a {
-    text-decoration: none;
-    color: white;
-}
-
-
-.menu_option {
-    padding: 0;
-}
-
-#menu_content li a {
-    color: white;
 }
 
 #menu_content li a:hover {
     color: #007bff;
 }
-
 .center_body {
     display: flex;
     justify-content: flex-start;
@@ -640,29 +592,21 @@ footer h3 {
     flex-direction: column;
 }
 
-.information1,
-.information2,
-.information3 {
+.information1,.information2,.information3 {
     display: flex;
     align-items: center;
 
 }
-
-.icon,
-.icon1,
-.icon2 {
+.icon,.icon1,.icon2 {
     font-size: 24px;
     color: #fff;
     margin-right: 5px;
 }
-
 .text_information {
     color: #fff;
     margin: 0;
 }
-
 /* footer section end */
-
 
 /* right_body */
 .content_tag a {
@@ -676,17 +620,12 @@ footer h3 {
     transition: background-color 0.3s ease;
     box-sizing: border-box;
 }
-
-
 .content_tag a:hover {
     background-color: #0056b3;
 }
-
 .right_body {
     flex: 0 0 32%;
 }
-
-
 /* final */
 .final_footer {
     display: flex;
@@ -696,51 +635,37 @@ footer h3 {
     padding: 20px;
     position: relative;
 }
-
 .left_final {
     flex: 1;
 }
-
 .right_final {
     flex: 1;
     text-align: right;
     position: relative;
 }
-
 /* list page  */
-
 span.highlight {
     color: blue;
 }
-
 section.main {
     background-color: #f5f5f5;
     padding: 20px;
     border-radius: 10px;
     flex: 0 0 70%;
 }
-
 .list_page_head {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 20px;
 }
-
-.list_page_head_left {
+.list_page_head_left, .list_page_head_right {
     flex: 1;
-    text-align: left;
+    
 }
-
-.list_page_head_right {
-    flex: 1;
-    text-align: right;
-}
-
 select#sort_properties {
     display: none;
 }
-
 .button_dropdown {
     display: flex;
     align-items: center;
@@ -751,73 +676,11 @@ select#sort_properties {
     cursor: pointer;
     position: relative;
 }
-
-.button_dropdown:hover {
-    border-color: #999;
-}
-
-.filter_option {
-    display: flex;
-    align-items: center;
-}
-
-.filter_option_content {
-    display: flex;
-    align-items: center;
-}
-
-.filter_option_content_text {
-    margin-right: 10px;
-}
-
-.bs_caret {
-    display: flex;
-    align-items: center;
-}
-
 .caret::after {
     content: '\25BC';
     font-size: 12px;
     color: #333;
-}
-
-.dropdown_menu {
-    display: none;
-    position: absolute;
-    background-color: white;
-    min-width: 200px;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    z-index: 1;
-    border-radius: 10px;
-    margin-top: 5px;
-    padding: 0;
-    list-style: none;
-}
-
-.dropdown_menu li {
-    border-bottom: 1px solid #ddd;
-}
-
-.dropdown_menu li:last-child {
-    border-bottom: none;
-}
-
-.dropdown_menu a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    cursor: pointer;
-}
-
-.dropdown_menu a:hover {
-    background-color: #f1f1f1;
-}
-
-.show {
-    display: block;
-}
-
+} 
 /* container chính */
 .list_page_footer {
     position: relative;
@@ -825,22 +688,15 @@ select#sort_properties {
     text-align: left;
     margin-left: 0;
 }
-
 .image01 {
     position: relative;
-    padding-left: 0;
     margin-left: 0;
 }
-
 .image01_main {
     position: relative;
-    margin-left: 0;
-    padding-left: 0;
 }
-
 .image01_main_text_text {
     background-color: rgb(25, 48, 154);
-    /* Màu xanh */
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
@@ -854,12 +710,10 @@ select#sort_properties {
     position: relative;
     width: 22%;
     height: 200px;
-    /* Đặt chiều cao ảnh */
     background-size: cover;
     background-position: 50% 50%;
 
 }
-
 .image01_list img {
     width: 25%;
     height: 25%;
@@ -884,7 +738,6 @@ select#sort_properties {
 .image01_list:hover .overlay {
     opacity: 1;
 }
-
 .view-property {
     background-color: transparent;
     color: white;
@@ -895,12 +748,10 @@ select#sort_properties {
     opacity: 1;
     transition: background-color 0.3s, color 0.3s;
 }
-
 .view-property:hover {
     background-color: white;
     color: rgb(51, 51, 138);
 }
-
 .icon_page_footer_info {
     display: flex;
     gap: 10px;
@@ -909,19 +760,15 @@ select#sort_properties {
     right: 10px;
 }
 
-.tym,
-.icon_compare {
+.tym,.icon_compare {
     font-size: 20px;
     cursor: pointer;
     color: white;
     position: relative;
 }
-
-.tym:hover,
-.icon_compare:hover {
+.tym:hover,.icon_compare:hover {
     color: orange;
 }
-
 .tooltip {
     visibility: hidden;
     width: 230px;
@@ -938,9 +785,7 @@ select#sort_properties {
     opacity: 0;
     transition: opacity 0.3s;
 }
-
-.tym:hover .tooltip.favouries,
-.icon_compare:hover .tooltip.compare {
+.tym:hover .tooltip.favouries,.icon_compare:hover .tooltip.compare {
     visibility: visible;
     opacity: 1;
 }
@@ -948,10 +793,8 @@ select#sort_properties {
 .image01_bottom a {
     display: none;
 }
-
 .button_bottom_list {
     background-color: red;
-    /* Màu đỏ */
     color: white;
     padding: 5px 10px;
     border-radius: 4px;
@@ -962,7 +805,6 @@ select#sort_properties {
 }
 
 /* information list page */
-
 .information_list_page {
     display: flex;
     justify-content: flex-start;
@@ -971,9 +813,7 @@ select#sort_properties {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
 }
-
-.information_list_page1,
-.information_list_page2 {
+.information_list_page1,.information_list_page2 {
 
     padding: 10px;
     color: black;
@@ -982,59 +822,40 @@ select#sort_properties {
 .infor_bonus {
     color: #333;
 }
-
-.information_list_page1 h3,
-.information_list_page1 p {
+.information_list_page1 h3,.information_list_page1 p {
     margin: 0;
     color: black;
 }
-
 .information_list_page_room {
     margin-top: 10px;
 }
-
 .amount_room {
     display: flex;
     justify-content: space-between;
 }
-
-.amount_room1,
-.amount_room2,
-.amount_room3 {
+.amount_room1,.amount_room2,.amount_room3 {
     display: flex;
     flex-direction: column;
 }
 
-.amount_room1_info,
-.amount_room2_info,
-.amount_room3_info {
+.amount_room1_info,.amount_room2_info,.amount_room3_info {
     display: flex;
     align-items: center;
-    /* Canh giữa theo chiều dọc */
     gap: 5px;
-    /* Khoảng cách giữa các phần tử */
 }
 
-.amount_room1_info a,
-.amount_room2_info a,
-.amount_room3_info a {
+.amount_room1_info a,.amount_room2_info a,.amount_room3_info a {
     color: gray;
-    /* Icon màu xám */
 }
 
-.amount_room1_info .figure,
-.amount_room2_info .figure,
-.amount_room3_info .figure {
+.amount_room1_info .figure,.amount_room2_info .figure,.amount_room3_info .figure {
     color: black;
-    /* Chữ đen */
 }
 
 .information_list_page2 {
     display: flex;
     flex-direction: column;
-    /* Hiển thị theo hàng dọc */
     justify-content: space-between;
-    /* Khoảng cách đều giữa các phần tử */
 }
 
 .information_list_page2_top {
@@ -1043,25 +864,26 @@ select#sort_properties {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-
 }
 
 .status1 {
     margin-bottom: 0;
 }
-
 .status {
     color: black;
     padding: 5px 10px 5px 0px;
     border-radius: 4px;
 }
+.price {
+    font-size: 24px;
+    margin-top: 0;
+    color: rgb(61, 61, 147);
 
+}
 .information_list_page2_bottom {
     display: flex;
     align-items: flex-start;
     gap: 5px;
     flex-direction: column;
 }
-
-
 /* list page end */
