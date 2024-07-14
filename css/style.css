@@ -289,6 +289,7 @@ section .properties-search-control a {
 
 .page-list-container {
     width: 70%;
+    padding: 0 20px;
 }
 
 .side-bar-container {
@@ -690,7 +691,7 @@ select#sort_properties {
 }
 .image01 {
     position: relative;
-    margin-left: 0;
+    margin: 0;
 }
 .image01_main {
     position: relative;
