@@ -1,3 +1,170 @@
+/* global start */
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.2;
+    background: #f7f7f7;
+    color: #808080;
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.property-type-widget li::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-right: 5px;
+    border: 5px solid rgba(0, 0, 0, 0);
+    border-left-color: gray;
+}
+
+/* global end */
+
+/* header section start */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 8%;
+    padding: 20px;
+}
+
+header .account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: rgb(28, 178, 255);
+}
+
+header .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header .navbar ul li {
+    position: relative;
+    margin: 0 3px;
+}
+
+header .navbar ul li a {
+    font-size: 15px;
+    padding: 17px 13px;
+    display: inline-block;
+    transition: all ease 0.3s;
+    border-radius: 5px;
+}
+
+header .navbar ul li a:hover {
+    background-color: #0054a6;
+    color: white;
+}
+
+header .navbar ul .submenu {
+    display: block;
+    position: absolute;
+    width: 230px;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, .05);
+    border-radius: 5px;
+    opacity: 0;
+    padding: 2rem 0;
+    visibility: hidden;
+    transition: all ease 0.5s;
+    /* z-index: 999; */
+}
+
+header .navbar ul .submenu li {
+    display: flex;
+    position: relative;
+    display: block;
+}
+
+header .navbar ul .submenu li a {
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #808080;
+}
+
+header .navbar ul li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+header .account a {
+    font-size: 15px;
+    padding: 13px 17px;
+}
+
+header .account .button {
+    font-size: 15px;
+    font-weight: 500 !important;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgb(28, 178, 255);
+    color: white;
+    border: none;
+    display: inline-block;
+}
+
+/* header section end */
+
+/* search section start */
+.properties-search {
+    background-image: url(https://sample.realhomes.io/modern02/wp-content/uploads/sites/2/2020/06/Bedroom.jpg);
+    background-position: center 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    z-index: 500;
+    height: 20rem;
+    width: 100%;
+}
+
+section .properties-cover {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0.8;
+    background: #0054a6;
+    z-index: 0;
+}
+
 section .properties-search-header {
     display: flex;
     align-items: center;
@@ -24,7 +191,6 @@ section .properties-search-control a {
     margin: 0 0 0 1.5rem;
     color: #ffffff;
 }
-
 
 .properties-search-form-container {
     color: #808080;
@@ -96,116 +262,6 @@ section .properties-search-control a {
 }
 
 /* map section end */
-/* list page */
-.feature-property-detail2{
-    display: flex;
-    align-items: flex-start;
-}
-.feature-property-detail3, .feature-property-detail4,.feature-property-detail5{
-    display: flex;
-    align-items: flex-start;
-}
-.feature-property-thumbnail1 , .feature-property-thumbnail2,.feature-property-thumbnail3 ,.feature-property-thumbnail4, .feature-property-thumbnail5 {
-    position: relative;
-    margin: 0;
-    display: flex;
-}
-.feature-property-thumbnail2{
-    margin-bottom: 25px;
-}
-.feature-property-thumbnail3{
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-.feature-property-thumbnail4, .feature-property-thumbnail5{
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-.part3{
-    display: flex;
-
-}
-.feature-property-detail5{
-    background-color: white;
-}
-.propery-price-container01{
-    display: flex;
-    padding-right: 30px;
-    padding-left: 25px;
-    flex-direction: column;
-}
-.propery-price-container5{
-    padding: 20px 80px 0 20px
-}
-.propery-price-container4{
-    padding-right: 50px;
-    padding-left: 20px;
-    margin-right: 0;
-}
-.property-by01{
-    flex-direction: column;
-    display: flex;
-}
-.feature-property-detail1,.feature-property-detail2, .feature-property-detail3,.feature-property-detail4 {
-    padding: 25px;
-    background-color: #fff;
-    text-align: left;
-display: flex;
-}
-
-.feature-property-detail1 h3 {
-    font-size: 17px;
-}
-.feature-property-detail2 h3 {
-    font-size: 17px;
-}
-.feature-property-detail3 h3 {
-    font-size: 17px;
-}
-.feature-property-detail4 h3 {
-    font-size: 17px;
-}
-.feature-property-detail5 h3 {
-    font-size: 17px;
-}
-
-
-.feature-property-detail1 .detail {
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-.feature-property-detail2 .detail {
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-.feature-property-detail3 .detail {
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-.feature-property-detail4 .detail {
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-.feature-property-detail5 .detail {
-    font-size: 14px;
-    margin-top: 0;
-    margin-bottom: 20px;
-}
-.price1, .price0_1{
-    margin-bottom: 10px;
-    color: #007BFF;
-    font-size: 26px;
-}
-.home1{
-    padding: 10px 40px 0px 0px;
-}
-.home5{
-    padding: 10px 50px 30px 20px;
-}
 
 /* main section start */
 .main {
@@ -231,8 +287,6 @@ display: flex;
 
 .page-list-container {
     width: 70%;
-    padding: 0 20px;
-    padding-bottom: 1000px;
 }
 
 .side-bar-container {
@@ -329,20 +383,9 @@ display: flex;
     display: inline-block;
     font-size: 12px;
 }
-.feature-properties-container5 {
-    margin: 0 0 30px;
-    width: 100%;
-position: relative;
-}
-
-.feature-properties-container5 span{
-    display: inline-block;
-    font-size: 12px;
-}
 
 .feature-property-item {
     border-radius: 5px;
-    overflow: hidden;
     box-shadow: 0 0 5px 2px rgba(0, 0, 0, .05)
 }
 
@@ -375,40 +418,16 @@ position: relative;
     border-left: 9px solid #0054a6;
 }
 
+.feature-property-thumbnail {
+    position: relative;
+    margin: 0;
+}
+
 .feature-property-image {
     display: flex;
     z-index: 0;
     position: relative;
-
 }
-.pagination {
-    display: flex;
-    gap: 10px; 
-    margin-left: 300px;
-}
-
-.button1, .button2 {
-    width: 40px; 
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%; 
-    text-decoration: none;
-    font-size: 16px;
-}   
-
-.button1 {
-    background-color: rgb(54, 142, 214); 
-color: white;
-}
-
-.button2 {
-    background-color: white; 
-    color: rgb(118, 115, 115); 
-}
-
-
 
 .feature-property-image img {
     border-radius: 5px 5px 0 0;
@@ -417,20 +436,13 @@ color: white;
 .feature-property-button {
     position: absolute;
     right: 0;
-    display: flex;
-    bottom: 10px;
-    gap: 10px;
+    bottom: 0;
+    z-index: 1000;
+    margin: 20px;
 }
 
 .feature-property-button span{
-    font-size: 20px;   
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 0.3s;
-}
-.feature-property-button span:hover {
-    background: rgba(255, 165, 0, 0.8); 
+    font-size: 18px;
 }
 
 .feature-property-button .favorite-button a,
@@ -457,8 +469,7 @@ color: white;
 
 .property-meta-container{
     display: flex;
-    flex-wrap: nowrap;
-
+    flex-wrap: wrap;
     margin-bottom: 5px;
     width: 100%;
     margin-left: -7px;
@@ -507,7 +518,7 @@ color: white;
 .footer {
     background-color: #0054a5;
     display: flex;
-flex-direction: column;
+    flex-direction: column;
     align-items: left;
     padding: 10px;
 }
@@ -530,15 +541,7 @@ flex-direction: column;
 }
 .left_body {
     flex: 0 0 30%;
-    color: white;
     padding-left: 15px;
-}
-.left_body .left_option a,
-.left_body h3 {
-    color: #fff; 
-}
-#menu_content li {
-    list-style: none;
 }
 
 footer h3 {
@@ -561,16 +564,6 @@ footer h3 {
 }
 .menu_option {
     padding: 0;
-}
-#menu_content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); 
-    grid-template-rows: repeat(3, auto); 
-    gap: 10px; 
-    padding: 0;
-}
-.tag_button h3{
-    color: white;
 }
 
 #menu_content li a:hover {
@@ -691,11 +684,11 @@ select#sort_properties {
     position: relative;
     flex: 1;
     text-align: left;
-margin-left: 0;
+    margin-left: 0;
 }
 .image01 {
     position: relative;
-    margin: 0;
+    margin-left: 0;
 }
 .image01_main {
     position: relative;
@@ -879,7 +872,7 @@ margin-left: 0;
     padding: 5px 10px 5px 0px;
     border-radius: 4px;
 }
-.price, .price0_1 {
+.price {
     font-size: 24px;
     margin-top: 0;
     color: rgb(61, 61, 147);
@@ -892,170 +885,3 @@ margin-left: 0;
     flex-direction: column;
 }
 /* list page end */
-/* global start */
-body {
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-    font-family: 'DM Sans', sans-serif;
-    line-height: 1.2;
-    background: #f7f7f7;
-    color: #808080;
-    box-sizing: border-box;
-    min-height: 100%;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: bottom;
-}
-
-.property-type-widget li::before {
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-right: 5px;
-    border: 5px solid rgba(0, 0, 0, 0);
-    border-left-color: gray;
-}
-
-/* global end */
-
-/* header section start */
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-header a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-header .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 8%;
-    padding: 20px;
-}
-
-header .account {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .logo {
-    color: rgb(28, 178, 255);
-}
-
-header .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-header .navbar ul li {
-    position: relative;
-    margin: 0 3px;
-}
-
-header .navbar ul li a {
-    font-size: 15px;
-    padding: 17px 13px;
-    display: inline-block;
-    transition: all ease 0.3s;
-    border-radius: 5px;
-}
-
-header .navbar ul li a:hover {
-    background-color: #0054a6;
-    color: white;
-}
-
-header .navbar ul .submenu {
-    display: block;
-    position: absolute;
-    width: 230px;
-    top: 100%;
-    left: 0;
-    background: white;
-    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, .05);
-    border-radius: 5px;
-    opacity: 0;
-    padding: 2rem 0;
-    visibility: hidden;
-    transition: all ease 0.5s;
-    /* z-index: 999; */
-}
-
-header .navbar ul .submenu li {
-    display: flex;
-    position: relative;
-    display: block;
-}
-
-header .navbar ul .submenu li a {
-    padding: 10px 20px;
-    width: 100%;
-    box-sizing: border-box;
-    color: #808080;
-}
-
-header .navbar ul li:hover .submenu {
-    opacity: 1;
-    visibility: visible;
-}
-
-header .account a {
-    font-size: 15px;
-    padding: 13px 17px;
-}
-
-header .account .button {
-    font-size: 15px;
-    font-weight: 500 !important;
-    padding: 14px 20px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    background-color: rgb(28, 178, 255);
-    color: white;
-    border: none;
-    display: inline-block;
-}
-
-
-/* header section end */
-
-/* search section start */
-.properties-search {
-    background-image: url(https://sample.realhomes.io/modern02/wp-content/uploads/sites/2/2020/06/Bedroom.jpg);
-    background-position: center 0%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    z-index: 500;
-    height: 20rem;
-    width: 100%;
-}
-
-section .properties-cover {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    opacity: 0.8;
-    background: #0054a6;
-    z-index: 0;
-}
