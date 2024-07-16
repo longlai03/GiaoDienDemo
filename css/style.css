@@ -1,171 +1,3 @@
-/* global start */
-body {
-    margin: 0;
-    padding: 0;
-    font-weight: 400;
-    font-family: 'DM Sans', sans-serif;
-    line-height: 1.2;
-    background: #f7f7f7;
-    color: #808080;
-    box-sizing: border-box;
-    min-height: 100%;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    vertical-align: bottom;
-}
-
-.property-type-widget li::before {
-    content: "";
-    display: inline-block;
-    width: 0;
-    height: 0;
-    margin-right: 5px;
-    border: 5px solid rgba(0, 0, 0, 0);
-    border-left-color: gray;
-}
-
-/* global end */
-
-/* header section start */
-header {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    z-index: 1000;
-}
-
-header a {
-    text-decoration: none;
-    color: #ffffff;
-}
-
-header .header-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 8%;
-    padding: 20px;
-}
-
-header .account {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-header .logo {
-    color: rgb(28, 178, 255);
-}
-
-header .navbar ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: flex;
-}
-
-header .navbar ul li {
-    position: relative;
-    margin: 0 3px;
-}
-
-header .navbar ul li a {
-    font-size: 15px;
-    padding: 17px 13px;
-    display: inline-block;
-    transition: all ease 0.3s;
-    border-radius: 5px;
-}
-
-header .navbar ul li a:hover {
-    background-color: #0054a6;
-    color: white;
-}
-
-header .navbar ul .submenu {
-    display: block;
-    position: absolute;
-    width: 230px;
-    top: 100%;
-    left: 0;
-    background: white;
-    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, .05);
-    border-radius: 5px;
-    opacity: 0;
-    padding: 2rem 0;
-    visibility: hidden;
-    transition: all ease 0.5s;
-    /* z-index: 999; */
-}
-
-header .navbar ul .submenu li {
-    display: flex;
-    position: relative;
-    display: block;
-}
-
-header .navbar ul .submenu li a {
-    padding: 10px 20px;
-    width: 100%;
-    box-sizing: border-box;
-    color: #808080;
-}
-
-header .navbar ul li:hover .submenu {
-    opacity: 1;
-    visibility: visible;
-}
-
-header .account a {
-    font-size: 15px;
-    padding: 13px 17px;
-}
-
-header .account .button {
-    font-size: 15px;
-    font-weight: 500 !important;
-    padding: 14px 20px;
-    box-sizing: border-box;
-    border-radius: 5px;
-    background-color: rgb(28, 178, 255);
-    color: white;
-    border: none;
-    display: inline-block;
-}
-
-
-/* header section end */
-
-/* search section start */
-.properties-search {
-    background-image: url(https://sample.realhomes.io/modern02/wp-content/uploads/sites/2/2020/06/Bedroom.jpg);
-    background-position: center 0%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    position: relative;
-    display: flex;
-    align-items: flex-end;
-    z-index: 500;
-    height: 20rem;
-    width: 100%;
-}
-
-section .properties-cover {
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    opacity: 0.8;
-    background: #0054a6;
-    z-index: 0;
-}
-
 section .properties-search-header {
     display: flex;
     align-items: center;
@@ -318,7 +150,7 @@ section .properties-search-control a {
     padding: 25px;
     background-color: #fff;
     text-align: left;
-    display: flex;
+display: flex;
 }
 
 .feature-property-detail1 h3 {
@@ -500,7 +332,7 @@ section .properties-search-control a {
 .feature-properties-container5 {
     margin: 0 0 30px;
     width: 100%;
-    position: relative;
+position: relative;
 }
 
 .feature-properties-container5 span{
@@ -675,7 +507,7 @@ color: white;
 .footer {
     background-color: #0054a5;
     display: flex;
-    flex-direction: column;
+flex-direction: column;
     align-items: left;
     padding: 10px;
 }
@@ -859,7 +691,7 @@ select#sort_properties {
     position: relative;
     flex: 1;
     text-align: left;
-    margin-left: 0;
+margin-left: 0;
 }
 .image01 {
     position: relative;
@@ -1060,3 +892,170 @@ select#sort_properties {
     flex-direction: column;
 }
 /* list page end */
+/* global start */
+body {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-family: 'DM Sans', sans-serif;
+    line-height: 1.2;
+    background: #f7f7f7;
+    color: #808080;
+    box-sizing: border-box;
+    min-height: 100%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+.property-type-widget li::before {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 0;
+    margin-right: 5px;
+    border: 5px solid rgba(0, 0, 0, 0);
+    border-left-color: gray;
+}
+
+/* global end */
+
+/* header section start */
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+header .header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 8%;
+    padding: 20px;
+}
+
+header .account {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header .logo {
+    color: rgb(28, 178, 255);
+}
+
+header .navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header .navbar ul li {
+    position: relative;
+    margin: 0 3px;
+}
+
+header .navbar ul li a {
+    font-size: 15px;
+    padding: 17px 13px;
+    display: inline-block;
+    transition: all ease 0.3s;
+    border-radius: 5px;
+}
+
+header .navbar ul li a:hover {
+    background-color: #0054a6;
+    color: white;
+}
+
+header .navbar ul .submenu {
+    display: block;
+    position: absolute;
+    width: 230px;
+    top: 100%;
+    left: 0;
+    background: white;
+    box-shadow: 0px 0px 5px 2px rgba(0, 0, 0, .05);
+    border-radius: 5px;
+    opacity: 0;
+    padding: 2rem 0;
+    visibility: hidden;
+    transition: all ease 0.5s;
+    /* z-index: 999; */
+}
+
+header .navbar ul .submenu li {
+    display: flex;
+    position: relative;
+    display: block;
+}
+
+header .navbar ul .submenu li a {
+    padding: 10px 20px;
+    width: 100%;
+    box-sizing: border-box;
+    color: #808080;
+}
+
+header .navbar ul li:hover .submenu {
+    opacity: 1;
+    visibility: visible;
+}
+
+header .account a {
+    font-size: 15px;
+    padding: 13px 17px;
+}
+
+header .account .button {
+    font-size: 15px;
+    font-weight: 500 !important;
+    padding: 14px 20px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    background-color: rgb(28, 178, 255);
+    color: white;
+    border: none;
+    display: inline-block;
+}
+
+
+/* header section end */
+
+/* search section start */
+.properties-search {
+    background-image: url(https://sample.realhomes.io/modern02/wp-content/uploads/sites/2/2020/06/Bedroom.jpg);
+    background-position: center 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    z-index: 500;
+    height: 20rem;
+    width: 100%;
+}
+
+section .properties-cover {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    opacity: 0.8;
+    background: #0054a6;
+    z-index: 0;
+}
